@@ -58,37 +58,12 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            <Label Margin="10"></Label>
-            <!--<Label Margin="5" x:Name="lbKingdomCommonName" />
-            <Label Margin="5" x:Name="lbClassName" />
-            <Label Margin="5" x:Name="lbFamilyName" />
-            <Label Margin="5" x:Name="lbFamilyCommonName" />
-            <Label Margin="5" x:Name="lbFamilyRank" />
-            <Label Margin="5" x:Name="lbIsSuperseded" />--> 
+            <Label Margin="10"></Label> 
         </StackLayout>
 
         <Button x:Name="ButtonAgregar" Text="Otra especie" Command="{Binding AgregarComando}" />
-        <Button x:Name="ButtonFavoritos" Text="Agregar a Favoritos" 
-                
-                BindingContext="{Binding Source={x:Reference Root} }"
-                />
+        <Button x:Name="ButtonFavoritos" Text="Agregar a Favoritos" BindingContext="{Binding Source={x:Reference Root} }"  />
+        <Button x:Name="ButtonFav" Text="Favoritos" Command="{Binding favoritos}" />
 
-        <ListView HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
-                  BindingContext="{Binding Source={x:Reference Root} }"
-                  ItemsSource="{Binding Path=Items}"
-                  IsRefreshing="{Binding IsBusy}"
-                  IsPullToRefreshEnabled="true"
-                  RefreshCommand="{Binding AgregarComando}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <Grid>
-                            <Label Margin="5" Text="{Binding Species.ScientificName}" />
-                        </Grid>
-
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
     </StackLayout>
 </ContentPage>

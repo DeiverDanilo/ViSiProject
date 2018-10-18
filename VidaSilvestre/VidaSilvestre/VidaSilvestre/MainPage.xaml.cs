@@ -17,22 +17,18 @@ namespace VidaSilvestre
         public Favoritos f = new Favoritos();
 
         public MainPage()
-        {
-            AgregarComando = new Command(async () => await CargarItems());
-
-            //AbrirComando = new Command(async () => await Navigation.PushAsync(f(elemento));
-
+        { 
             InitializeComponent();        
             ButtonFavoritos.Clicked += ButtonFavoritos_Click;
             ButtonAgregar.Clicked += ButtonAgregar_Click;
+            ButtonFav.Clicked += ButtonFav_Click;
         }
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
             elemento = await CargarProductos(686);
-            mostrarEspecie();
-            //await CargarItems();
+            mostrarEspecie(); 
         }
 
         private void mostrarEspecie()
@@ -40,13 +36,7 @@ namespace VidaSilvestre
             lbNombre.Text = elemento.Species.ScientificName;
             lbClassCommonName.Text = elemento.Species.ClassCommonName;
             lbAcceptedCommonName.Text = elemento.Species.AcceptedCommonName;
-            lbKingdomName.Text = elemento.Species.KingdomName;
-            //lbKingdomCommonName.Text = elemento.Species.KingdomCommonName;
-            //lbClassName.Text = elemento.Species.ClassName;
-            //lbFamilyName.Text = elemento.Species.FamilyName;
-            //lbFamilyCommonName.Text = elemento.Species.FamilyCommonName;       
-            //lbFamilyRank.Text = elemento.Species.FamilyRank;
-            //lbIsSuperseded.Text = elemento.Species.IsSuperseded;
+            lbKingdomName.Text = elemento.Species.KingdomName; 
         }
         private async void ButtonFavoritos_Click(object sender, EventArgs arg)
         {
@@ -55,29 +45,18 @@ namespace VidaSilvestre
         }
         private async void ButtonAgregar_Click(object sender, EventArgs arg)
         {
-            elemento = await CargarProductos(rand.Next(1, 10000));
-            mostrarEspecie();
-            // await CargarItems();
+            elemento = null;
+            while (elemento==null || elemento.Species == null)
+            {
+                elemento = await CargarProductos(rand.Next(1, 10000));
+            }
+            mostrarEspecie(); 
         }
-
-        private async Task CargarItems()
+        private async void ButtonFav_Click(object sender, EventArgs arg)
         {
-            //if (!Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
-            //{
-            //    await DisplayAlert("Advertencia", "No hay internet", "Cerrar");
-            //    return;
-            //}
-            //IsBusy = true;
-
-            //await Task.Delay(2500);
-
-            //Items.Add($"Elemento #{Items.Count}");
-
-        
-            IsBusy = false;
-
-            //await DisplayAlert("Titulo", "Hola!", "Cerrar");
+            await Navigation.PushAsync(f);
         }
+ 
 
         private async Task<Elemento> CargarProductos(int ob)
         {
