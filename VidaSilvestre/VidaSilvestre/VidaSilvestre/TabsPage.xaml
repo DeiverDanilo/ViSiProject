@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:VidaSilvestre"
+            x:Class="VidaSilvestre.TabsPage"
+            Title="Detalle">
+    <ContentPage Title="Detalle">
+        <StackLayout Orientation="Vertical">
+            <Label Margin="10" Text="Detalle" FontSize="Medium"/>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbNombre"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre Común:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbClassCommonName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre Común aceptado:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbAcceptedCommonName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre del reino:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbKingdomName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre común del reino:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbKingdomCommonName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre de la clase:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbClassName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre de la familia:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbFamilyName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Nombre común familia:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbFamilyCommonName"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Rango familiar:  " FontAttributes="Bold"/>
+                        <Span x:Name="lbFamilyRank"  Text="©" FontSize="Small" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label> 
+        </StackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Imagen">
+        <StackLayout>
+            <Label Margin="10" Text="Imagen" FontSize="Medium"/>
+            <Image x:Name="backgroundImage"  />
+            <Label Margin="5">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span x:Name="noImage" Text="" FontAttributes="Bold"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

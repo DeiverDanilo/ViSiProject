@@ -1,0 +1,14 @@
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\bin\Debug\netstandard2.0\VidaSilvestre.deps.json
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\bin\Debug\netstandard2.0\VidaSilvestre.dll
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\bin\Debug\netstandard2.0\VidaSilvestre.pdb
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\VidaSilvestre.csprojAssemblyReference.cache
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\Favoritos.xaml.g.cs
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\TabsPage.xaml.g.cs
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\VidaSilvestre.csproj.CoreCompileInputs.cache
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\VidaSilvestre.AssemblyInfoInputs.cache
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\VidaSilvestre.AssemblyInfo.cs
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\VidaSilvestre.dll
+C:\Users\Dan\Desktop\VidaSilvestre\VidaSilvestre\VidaSilvestre\obj\Debug\netstandard2.0\VidaSilvestre.pdb
